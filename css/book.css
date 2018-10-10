@@ -1,0 +1,286 @@
+/* All CSS styles go here */
+@font-face { 
+	font-family: 'Open Sans', sans-serif; }
+
+@font-face {
+	font-family:'Fairwater Script'; }
+
+
+
+
+
+.cover {
+	background-color: #F58232;
+	width: 400px;
+	height: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -300px;
+
+}
+
+
+.left  {
+
+	width: 50px;
+	height: 30px;
+	background: white;
+	position: absolute;
+	top: 40%;
+	left: 35%;
+	transform:translate(-50%,-50%) rotate(20deg);
+	cursor: pointer;
+	border-bottom-right-radius: 150px;
+	border-bottom-left-radius: 150px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.right  {
+
+	width: 50px;
+	height: 30px;
+	background: white;
+	position: absolute;
+	top: 40%;
+	left: 65%;
+	transform:translate(-50%,-50%) rotate(-20deg);
+	cursor: pointer;
+	border-bottom-right-radius: 150px;
+	border-bottom-left-radius: 150px;
+	overflow: hidden;
+
+}
+
+.one {
+	width: 15px;
+	height: 30px;
+	background: #222f3e;
+	border-radius: 50%;
+	position: absolute;
+	left: 35%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+
+}
+
+.two {
+	width: 15px;
+	height: 30px;
+	background: #222f3e;
+	border-radius: 50%;
+	position: absolute;
+	left: 65%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+}
+
+.A {
+	width: 300px;
+	height: 160px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+	z-index: 3;
+}
+
+.A span {
+	display: block;
+	width: 100%;
+	height: 0%;
+	background: #222f3e;
+	border-radius: 0 0 60% 60%;
+	transition: 0.4s all;
+}
+
+.left:hover .A span {
+	height: 100%;
+}
+
+.B {
+	width: 300px;
+	height: 160px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+	z-index: 3;
+}
+
+.B span {
+	display: block;
+	width: 100%;
+	height: 0%;
+	background: #222f3e;
+	border-radius: 0 0 60% 60%;
+	transition: 0.4s all;
+}
+
+.right:hover .B span {
+	height: 100%;
+}
+
+.first {
+	width: 15px;
+	height: 10px;
+	background: #222f3e;
+	border-radius: 50%;
+	position: absolute;
+	left: 47%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.second {
+	width: 15px;
+	height: 10px;
+	background: #222f3e;
+	border-radius: 50%;
+	position: absolute;
+	left: 53%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.tongue {
+transform:scale(.2);
+position:absolute;
+left: -5%;
+top: 20%;
+}
+
+.mono {
+	color:#00A19B; 
+	font-size: 3em;
+	letter-spacing: .25em;
+	font-family: open-sans, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	text-align: center;
+	position: relative;
+	top: 500px;
+	left: 10px;
+	float:left;
+	margin-left: 18px;
+}
+
+@keyframes s_fade {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+		.s {
+			opacity: 0;
+			animation: s_fade 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
+			}
+
+@keyframes q_fade {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+		.q {
+			opacity: 0;
+			animation: q_fade 2s;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
+			}
+
+@keyframes u_fade {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+		.u {
+			opacity: 0;
+			animation: u_fade 3s;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
+			}
+
+@keyframes i_fade {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+		.i {
+			opacity: 0;
+			animation: i_fade 4s;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
+			}
+
+@keyframes r_fade {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+		.r {
+			opacity: 0;
+			animation: r_fade 5s;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
+
+			}
+
+@keyframes m_fade {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+		.m {
+			opacity: 0;
+			animation: m_fade 6s;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
+			}
+
+
+.author {
+	color:#DDE31B;
+	font-size: 3em;
+	font-family: Fairwater Script, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	position: absolute;
+	top: 75px;
+	left: 60px;
+	animation: type 4s steps(55);
+	 white-space: nowrap;
+	 overflow: hidden;
+	 line-height: 80px;
+
+}
+
+@keyframes type {
+	0% {width: 0px;}
+	100% { width: 400px; }
+}
+
+@keyframes award_move {
+	0% { top: 0px; left: 320px; }
+	50% { top: 50px; left: 320px; }
+	100% { top: 50px; left: 0px;}
+}
+
+.award {
+	color:white;
+	font-size: 1em;
+	font-family: open-sans, sans-serif;
+	font-style: normal;
+	text-align:center;
+	letter-spacing: .15em;
+	position: relative;
+	top: 35px;
+	left: 85px; 
+	animation: award_move 4s;
+	animation-fill-mode: forwards;
+
+
